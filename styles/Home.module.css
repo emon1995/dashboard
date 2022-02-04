@@ -1,4 +1,4 @@
-.navcontainer{
+.navcontainer {
   position: fixed;
   width: 200px;
   height: 100%;
@@ -6,12 +6,12 @@
   box-shadow: 3px 0px 6px 0px rgba(246, 246, 246, 0.75);
 }
 
-.wrapper{
+.wrapper {
   padding: 10px;
   z-index: 1;
 }
 
-.logo{
+.logo {
   padding: 10px;
   padding-left: 20px;
   text-align: center;
@@ -19,7 +19,7 @@
   font-weight: bold;
 }
 
-.wrapper>ul{
+.wrapper > ul {
   margin-top: 20px;
   text-align: left;
   padding-left: 10px;
@@ -34,10 +34,10 @@
   list-style: none;
   font-size: 20px;
   text-decoration: none;
-  opacity: .6;
+  opacity: 0.6;
 }
 
-.wrapper ul li a:hover{
+.wrapper ul li a:hover {
   color: darkgoldenrod;
   font-size: 22px;
   transition: 0.2s;
@@ -45,35 +45,34 @@
 
 /* For Mobiles Phones */
 
-
-@media (max-width:768px){
-  .navcontainer{
+@media (max-width: 768px) {
+  .navcontainer {
     width: 70px;
   }
-  .logo h2{
+  .logo h2 {
     opacity: 0;
   }
-  .logo{
+  .logo {
     background: url('../public/logo.png');
     width: 40px;
     height: 40px;
     padding: 10px;
     margin: 10px;
   }
-  .wrapper ul{
+  .wrapper ul {
     gap: 5px;
   }
-  .wrapper ul li:hover{
+  .wrapper ul li:hover {
     color: red;
   }
-  .wrapper ul li a{
+  .wrapper ul li a {
     opacity: 0;
   }
 }
 
 /* Header css started */
 
-.headcontainer{
+.headcontainer {
   display: flex;
   flex-wrap: wrap;
   height: 70px;
@@ -81,42 +80,130 @@
   margin-left: 200px;
 }
 
-.headwrapper{
+.headwrapper {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 
-.title{
+.title {
   margin-left: 40px;
 }
 
-.title h2{
+.title h2 {
   color: rgb(0, 0, 0);
 }
 
-.title p{
+.title p {
   color: rgb(0, 0, 0);
 }
 
-.profile{
+.profile {
   position: absolute;
   right: 20px;
 }
 
-.image{
-  
+.image {
   border-radius: 50%;
   cursor: pointer;
 }
 
 /* For Mobiles phone */
-@media (max-width:768px){
-  .headcontainer{
+@media (max-width: 768px) {
+  .headcontainer {
     width: 100%;
     margin-left: 70px;
   }
-  .profile{
+  .profile {
     right: 5px;
+  }
+}
+
+/* Dashboard content start */
+.contentcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 200px;
+}
+
+.contentwrapper {
+  display: flex;
+  padding: 20px;
+  gap: 40px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 250px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 3px 0px 6px 0px rgb(246, 246, 246, 0.75);
+}
+
+/* For mobiles phones */
+
+@media (max-width: 768px) {
+  .contentcontainer {
+    margin-left: 70px;
+  }
+  .contentwrapper {
+    margin-left: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .tabs {
+    width: 350px;
+  }
+}
+
+/* 
+charts css started  */
+
+.charts {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: 20px;
+}
+.bar {
+  margin-left: 20px;
+}
+
+.circle {
+  margin-left: 120px;
+}
+
+@media only screen and (max-width: 768px) {
+  .charts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  .bar > h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .circle > h2 {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  .bar {
+    margin-top: 60px;
+    margin-left: 10px;
+    width: 300px;
+    height: 300px;
+  }
+  .circle {
+    margin-top: 60px;
+    margin-left: 10px;
+    width: 300px;
+    height: 300px;
   }
 }
